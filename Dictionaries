@@ -1,0 +1,33 @@
+
+DICTIONARY:
+
+# Create a dictionary by the name 'person'
+person = {"name": "Linus", "age": 21}
+print(person)
+
+# Access a key-value in the dictionary
+print(person['name'])  # it did print the name of the hey'name'
+
+# Check out if the key with a name 'gender' exists
+print(person.get("gender"))  # this gives out 'None'
+
+# if we try to access a key value that does't exist, we will have a 'key error'
+print(person["gender"])
+
+# instead of showing none, i can display a custom text when it fails to get the key value.
+print(person.get('gender', ["Do not exist what you are searching for"]))
+        # This gives out the message if the key = gender doesn't exist
+
+# I can delete a key from the dictionary by .pop().
+print(person.pop('name'))
+
+Iteration through a dictionary
+for key in person:
+    print(key)
+    print(person[key])
+
+
+
+
+
+
