@@ -1,0 +1,30 @@
+
+# The while loop runs the same peice of code infinite times unless a condition is mentioned. In the below example, "count = count + 1" increments the value 
+  of count after each iteration by 1. So, there is going to be 10 iterations starting from count = 10 to 1.
+
+number = int(input("Please enter the number: "))
+
+count = 10
+
+while count > 0:
+    product = number * count
+    print(number, "*", count, "=", product)
+    count = count-1
+
+
+
+
+Output:
+
+Please enter the number: 5
+
+5 * 10 = 50
+5 * 9 = 45
+5 * 8 = 40
+5 * 7 = 35
+5 * 6 = 30
+5 * 5 = 25
+5 * 4 = 20
+5 * 3 = 15
+5 * 2 = 10
+5 * 1 = 5
