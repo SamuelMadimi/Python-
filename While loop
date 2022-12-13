@@ -28,3 +28,22 @@ Please enter the number: 5
 5 * 3 = 15
 5 * 2 = 10
 5 * 1 = 5
+
+
+# Breaking the iteration after a certain condition is met and exit.
+languages = ("python", "java", "swift", "C", "C++")
+for language in languages:
+    if language == "swift" or language == "C++":
+        print("sorry")
+        break
+    print(language)
+    
+    
+
+# Skipos the iteration after a certain condition is met but only for that loop.
+languages = ("python", "java", "swift", "C", "C++")
+for language in languages:
+    if language == "swift" or language == "C++":
+        print("sorry")
+        continue
+    print(language)
